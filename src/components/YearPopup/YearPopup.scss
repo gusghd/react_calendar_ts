@@ -1,0 +1,47 @@
+.year-popup {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    height: 200px;
+    width: 350px;
+    background-color: #fff;
+    z-index: 100;
+    border: 2px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    
+    .move-year-btn {
+        button {
+            width: 10px;
+            height: 100%;
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+
+    .year-list-container {
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        .year-item {
+            width: calc(100% / 5 - 2px);
+            justify-content: space-between;
+            margin: auto;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                border-radius: 10px;
+                background-color: #eee;
+            }
+
+            &.selected {
+                font-weight: bold;
+                cursor: default;
+                border: 0;
+                background-color: #fff;
+            }
+        }
+    }
+}

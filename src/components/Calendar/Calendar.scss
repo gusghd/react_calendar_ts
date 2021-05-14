@@ -1,0 +1,24 @@
+$header-height: 70px;
+
+.calendar-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: calc(100% - 95px);
+}
+
+.font-sun {
+    color: rgb(250, 69, 69);
+}
+.font-sat {
+    color: rgb(35, 49, 245);
+}
+
+.date-item {
+    width: calc(100% / 7 - 2px);
+    border: 1px solid #ccc;
+    &.other-month span{
+        color: #ccc !important;
+    }
+}
+

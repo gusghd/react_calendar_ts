@@ -1,0 +1,38 @@
+.calendar-header-container {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    background-color: #fff;
+    flex-direction: column;
+    
+    .calendar-header-content {
+        width: 100%;
+        height: 50px;
+        display: flex;
+
+        button {
+            all: unset;    
+            cursor: pointer;
+            padding: 0 10px;
+            line-height: 50px;
+            align-items: center;
+        }
+        .hedaer-info {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 50px;
+            align-items: center;
+        }
+    }
+    .calendar-days {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30px;
+        .day-item {
+            width: calc(100% / 7 - 2px);
+            text-align: center;
+        }
+    }
+}
